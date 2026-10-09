@@ -9,11 +9,14 @@
 
 ### Primary
 
-Main brand color — CTAs, buttons, links, active states, brand moments.
+Main brand colour. Which pink sits behind white text depends on the text size: see the rule below the table.
 
 | Token | HEX | Usage |
 |-------|-----|-------|
-| **Brand** | `#eb1f79` | Primary actions, links, highlighted headings, accent lines |
+| **Brand** | `#eb1f79` | Links, highlighted headings, accent lines, borders, icons |
+| **Action** | `#e1146e` | Filled buttons, badges, tags and selected states with white text on them |
+
+**White text on pink:** Brand `#eb1f79` only behind large text, 24 px and up (or 18.66 px and up at Bold 700). Below that, for button labels, badges and tags, use Action `#e1146e`. White on Brand is 4.2:1, which meets WCAG AA for large text (3:1) but not for normal text (4.5:1). White on Action is 4.6:1.
 
 ### Secondary
 
@@ -69,6 +72,7 @@ Page-level and surface backgrounds. **Web:** prefer Alice Blue or Gradient 200 f
 | **White** | `#ffffff` | Default document/page background |
 | **Gradient 200** | `Scarlet 100 (#fde7e6) → Purple 200 (#edddf1)` | Soft tinted background (web preferred) |
 | **Gradient 700** | `Purple 700 → Purple 500` | Hero/feature backgrounds |
+| **Gradient Soft Pink** | `#fff0f2 → #fde8f9`, top to bottom | Page background for the whole weight loss consultation flow, from the questionnaire through product selection to checkout. Its two colours are not on the primitive scales |
 
 ### Semantic
 
@@ -94,6 +98,8 @@ Complete 50–950 ramps for building extended palettes. The semantic tokens abov
 | **Scarlet** | `#fef3f2` | `#fde7e6` | `#fbd1d0` | `#f7abaa` | `#f27a7b` | `#e84b51` | `#d93f4c` | `#b31d2e` | `#961b2c` | `#801b2c` | `#470a13` |
 | **Purple** | `#fbf7fc` | `#f6eff8` | `#edddf1` | `#dfc2e5` | `#cc9ed4` | `#b377be` | `#9758a1` | `#7e4685` | `#6a3c6f` | `#58345b` | `#361939` |
 | **Amber Gold** | `#fffaeb` | `#fdefc8` | `#fbde8c` | `#f9c74f` | `#f7b128` | `#f18f0f` | `#d56b0a` | `#b1490c` | `#903910` | `#762f11` | `#441604` |
+
+**Brand Pink 650** `#e1146e` sits between 600 and 700. It exists for the **Action** token above and is not part of the regular 50–950 ramp.
 
 ---
 
@@ -224,7 +230,7 @@ Used for formal documents (audits, compliance reports, proposals).
 | **Logo** | Pink Wordmark lockup, top-left, 28 px height |
 | **Document title** | Text colour (`#162948`), 36 px SemiBold, 120% line-height, vertically centred left |
 | **Subtitle** | Text Supporting (`#5c697f`), Body 16 Regular, 150% line-height, below title, 12 px gap |
-| **Status badge** | All Caps (12 px SemiBold, 1 px letter-spacing), white text on PillSorted Pink (`#eb1f79`) background, 8 px padding, 8 px border-radius |
+| **Status badge** | All Caps (12 px SemiBold, 1 px letter-spacing), white text on Action (`#e1146e`) background, 8 px padding, 8 px border-radius |
 | **Metadata** | Vertical stack below title block, 24 px gap between items. Labels: 10 px SemiBold, 0.6 px letter-spacing, Text Supporting (`#5c697f`). Values: 12 px Regular, Text colour (`#162948`). 4 px gap between label and value |
 
 ### Body Pages (Letterhead)
@@ -291,6 +297,7 @@ Use semantic colours for callout/alert boxes in documents:
 :root {
   /* Primary */
   --primary-brand:       #eb1f79;
+  --primary-action:      #e1146e;   /* fill behind white text under 24 px */
 
   /* Secondary */
   --secondary-purple-600: #9758a1;
@@ -315,6 +322,7 @@ Use semantic colours for callout/alert boxes in documents:
   /* Backgrounds */
   --bg-white-smoke:      #f6f6f9;
   --bg-alice-blue:       #f6f6ff;
+  --bg-gradient-soft-pink: linear-gradient(180deg, #fff0f2 0%, #fde8f9 100%);
   --bg-white:            #ffffff;
 
   /* Semantic — Primary Fills */
@@ -377,4 +385,4 @@ Use semantic colours for callout/alert boxes in documents:
 
 - **Figma:** [PillSorted Brand Asset Library](https://www.figma.com/design/Z2nkh8e6JZWs7sRTxkZzQo/PillSorted-Brand-Asset-Library?node-id=0-1)
 - **Jira:** [DES-651](https://pillsorted.atlassian.net/browse/DES-651)
-- **Last updated:** 2026-03-04
+- **Last updated:** 2026-10-09
