@@ -13,10 +13,13 @@ Main brand colour. Which pink sits behind white text depends on the text size: s
 
 | Token | HEX | Usage |
 |-------|-----|-------|
-| **Brand** | `#eb1f79` | Links, highlighted headings, accent lines, borders, icons |
+| **Brand** | `#eb1f79` | Large brand fills, highlighted headings, accent lines, borders, icons |
 | **Action** | `#e1146e` | Filled buttons, badges, tags and selected states with white text on them |
+| **Link** | `#cc0a5a` | Text links and text-only actions (Brand Pink 700) |
 
 **White text on pink:** Brand `#eb1f79` only behind large text, 24 px and up (or 18.66 px and up at Bold 700). Below that, for button labels, badges and tags, use Action `#e1146e`. White on Brand is 4.2:1, which meets WCAG AA for large text (3:1) but not for normal text (4.5:1). White on Action is 4.6:1.
+
+**Pink text:** Brand `#eb1f79` is 4.2:1 on white, too low for text under 24 px. Links take Link `#cc0a5a`, which is 5.6:1 on white and 4.8:1 on the Soft Pink gradient.
 
 ### Secondary
 
@@ -76,14 +79,14 @@ Page-level and surface backgrounds. **Web:** prefer Alice Blue or Gradient 200 f
 
 ### Semantic
 
-System feedback colors — success, error, info, warning. Each has a primary fill (icons, text) and a secondary fill (background).
+System feedback colors — success, error, info, warning. Each has a primary fill (icons, borders), a secondary fill (background) and a text colour. The primary fills are not text colours: Success and Error are below 4.5:1 on white.
 
-| State | Primary Fill | Secondary Fill | Usage |
-|-------|-------------|----------------|-------|
-| **Success** | `#19b07b` | `#d3f8e4` | Confirmations, completed states |
-| **Error** | `#e84b51` | `#fde7e6` | Validation errors, critical warnings |
-| **Info** | `#419ef0` | `#dceffd` | Informational callouts, tips |
-| **Warning** | `#f9c74f` | `#fdefc8` | Caution notices, attention required |
+| State | Primary Fill | Secondary Fill | Text | Usage |
+|-------|-------------|----------------|------|-------|
+| **Success** | `#19b07b` | `#d3f8e4` | `#0a7252` (Emerald 700) | Confirmations, completed states |
+| **Error** | `#e84b51` | `#fde7e6` | `#b31d2e` (Scarlet 700) | Validation errors, critical warnings |
+| **Info** | `#419ef0` | `#dceffd` | `#162948` (Text) | Informational callouts, tips |
+| **Warning** | `#f9c74f` | `#fdefc8` | `#162948` (Text) | Caution notices, attention required |
 
 ### Color Primitives (Full Scales)
 
@@ -298,6 +301,7 @@ Use semantic colours for callout/alert boxes in documents:
   /* Primary */
   --primary-brand:       #eb1f79;
   --primary-action:      #e1146e;   /* fill behind white text under 24 px */
+  --link:                #cc0a5a;   /* text links and text-only actions */
 
   /* Secondary */
   --secondary-purple-600: #9758a1;
@@ -325,7 +329,7 @@ Use semantic colours for callout/alert boxes in documents:
   --bg-gradient-soft-pink: linear-gradient(180deg, #fff0f2 0%, #fde8f9 100%);
   --bg-white:            #ffffff;
 
-  /* Semantic — Primary Fills */
+  /* Semantic — Primary Fills (icons and borders, not text) */
   --semantic-success:    #19b07b;
   --semantic-error:      #e84b51;
   --semantic-info:       #419ef0;
@@ -336,6 +340,10 @@ Use semantic colours for callout/alert boxes in documents:
   --semantic-error-bg:   #fde7e6;
   --semantic-info-bg:    #dceffd;
   --semantic-warning-bg: #fdefc8;
+
+  /* Semantic — Text */
+  --semantic-success-text: #0a7252;
+  --semantic-error-text:   #b31d2e;
 
   /* Typography */
   --font-family:         'DM Sans', sans-serif;
