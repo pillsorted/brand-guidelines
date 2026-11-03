@@ -13,7 +13,7 @@ Main brand colour. Which pink sits behind white text depends on the text size: s
 
 | Token | HEX | Usage |
 |-------|-----|-------|
-| **Brand** | `#eb1f79` | Large brand fills, highlighted headings, accent lines, borders, icons |
+| **Brand** | `#eb1f79` | Large brand fills, highlighted headings at 24 px and up, accent lines, borders, icons |
 | **Action** | `#e1146e` | Filled buttons, badges, tags and selected states with white text on them |
 | **Link** | `#cc0a5a` | Text links and text-only actions (Brand Pink 700) |
 
@@ -243,7 +243,7 @@ Used for formal documents (audits, compliance reports, proposals).
 | **Header** | Pink Wordmark logo, left-aligned, 28 px height, 24 px bottom padding |
 | **Content area** | 32 px below header. 56 px right padding |
 | **Section gap** | 24 px between sections |
-| **Section headings** | H4 style — PillSorted Pink (`#eb1f79`), 18 px SemiBold, -0.25 px letter-spacing |
+| **Section headings** | H4 style — Link (`#cc0a5a`), 18 px SemiBold, -0.25 px letter-spacing |
 | **Sub-headings** | Body 12 (print) SemiBold, Text colour (`#162948`) |
 | **Body text** | Body 10 (print) Regular, Text colour (`#162948`), 150% line-height, 10 px paragraph spacing |
 | **Bullet lists** | Disc style, 15 px left margin, 10 px spacing between items (last item: 0), Body 10 (print) Regular, 150% line-height |
