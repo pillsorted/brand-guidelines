@@ -344,6 +344,8 @@ Use semantic colours for callout/alert boxes in documents:
   /* Semantic — Text */
   --semantic-success-text: #0a7252;
   --semantic-error-text:   #b31d2e;
+  --semantic-info-text:    #162948;
+  --semantic-warning-text: #b1490c;
 
   /* Typography */
   --font-family:         'DM Sans', sans-serif;
