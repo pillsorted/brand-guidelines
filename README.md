@@ -86,7 +86,7 @@ System feedback colors — success, error, info, warning. Each has a primary fil
 | **Success** | `#19b07b` | `#d3f8e4` | `#0a7252` (Emerald 700) | Confirmations, completed states |
 | **Error** | `#e84b51` | `#fde7e6` | `#b31d2e` (Scarlet 700) | Validation errors, critical warnings |
 | **Info** | `#419ef0` | `#dceffd` | `#162948` (Text) | Informational callouts, tips |
-| **Warning** | `#f9c74f` | `#fdefc8` | `#162948` (Text) | Caution notices, attention required |
+| **Warning** | `#f9c74f` | `#fdefc8` | `#b1490c` (Amber Gold 700) | Caution notices, attention required |
 
 ### Color Primitives (Full Scales)
 
