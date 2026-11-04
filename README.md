@@ -75,7 +75,7 @@ Page-level and surface backgrounds. **Web:** prefer Alice Blue or Gradient 200 f
 | **White** | `#ffffff` | Default document/page background |
 | **Gradient 200** | `Scarlet 100 (#fde7e6) → Purple 200 (#edddf1)` | Soft tinted background (web preferred) |
 | **Gradient 700** | `Purple 700 → Purple 500` | Hero/feature backgrounds |
-| **Gradient Soft Pink** | `#fff0f2 → #fde8f9`, top to bottom | Page background for the whole weight loss consultation flow, from the questionnaire through product selection to checkout. Its two colours are not on the primitive scales |
+| **Gradient Soft Pink** | `#fff0f2 → #fde8f9`, top to bottom | Page background for every screen of the patient-facing web app (PFA). Its two colours are not on the primitive scales |
 
 ### Semantic
 
