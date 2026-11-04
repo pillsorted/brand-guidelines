@@ -13,13 +13,13 @@ Main brand colour. Which pink sits behind white text depends on the text size: s
 
 | Token | HEX | Usage |
 |-------|-----|-------|
-| **Brand** | `#eb1f79` | Large brand fills, highlighted headings at 24 px and up, accent lines, borders, icons |
+| **Brand** | `#eb1f79` | Large brand fills, highlighted headings at 24 px and up, or 18.66 px and up at Bold 700, accent lines, borders, icons |
 | **Action** | `#e1146e` | Filled buttons, badges, tags and selected states with white text on them |
 | **Link** | `#cc0a5a` | Text links and text-only actions (Brand Pink 700) |
 
 **White text on pink:** Brand `#eb1f79` only behind large text, 24 px and up (or 18.66 px and up at Bold 700). Below that, for button labels, badges and tags, use Action `#e1146e`. White on Brand is 4.2:1, which meets WCAG AA for large text (3:1) but not for normal text (4.5:1). White on Action is 4.6:1.
 
-**Pink text:** Brand `#eb1f79` is 4.2:1 on white, too low for text under 24 px. Links take Link `#cc0a5a`, which is 5.6:1 on white and 4.8:1 on the Soft Pink gradient.
+**Pink text:** Brand `#eb1f79` is 4.2:1 on white, too low for text under 24 px, or under 18.66 px at Bold 700. Links take Link `#cc0a5a`, which is 5.6:1 on white and 4.8:1 on the Soft Pink gradient.
 
 ### Secondary
 
