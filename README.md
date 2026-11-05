@@ -66,16 +66,16 @@ Structural grays — borders, dividers, component surfaces.
 
 ### Backgrounds
 
-Page-level and surface backgrounds. **Web:** prefer Alice Blue or Gradient 200 for tinted backgrounds. **Print:** prefer White Smoke.
+Page-level and surface backgrounds. **Web app (PFA):** Gradient Soft Pink on every screen that is on PFA; screens not moved yet keep their current background. **Print:** prefer White Smoke.
 
 | Token | HEX | Usage |
 |-------|-----|-------|
 | **White Smoke** | `#f6f6f9` | Page background (print preferred), alternating table rows |
-| **Alice Blue** | `#f6f6ff` | Info panels, callout boxes, highlighted sections (web preferred) |
+| **Alice Blue** | `#f6f6ff` | Info panels, callout boxes, highlighted sections |
 | **White** | `#ffffff` | Default document/page background |
-| **Gradient 200** | `Scarlet 100 (#fde7e6) → Purple 200 (#edddf1)` | Soft tinted background (web preferred) |
+| **Gradient 200** | `Scarlet 100 (#fde7e6) → Purple 200 (#edddf1)` | Soft tinted background |
 | **Gradient 700** | `Purple 700 → Purple 500` | Hero/feature backgrounds |
-| **Gradient Soft Pink** | `#fff0f2 → #fde8f9`, top to bottom | Page background for the whole weight loss consultation flow, from the questionnaire through product selection to checkout. Its two colours are not on the primitive scales |
+| **Gradient Soft Pink** | `#fff0f2 → #fde8f9`, top to bottom | Page background for every screen of the patient-facing web app (PFA). Its two colours are not on the primitive scales |
 
 ### Semantic
 
