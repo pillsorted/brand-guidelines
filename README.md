@@ -104,6 +104,8 @@ Complete 50–950 ramps for building extended palettes. The semantic tokens abov
 
 **Brand Pink 650** `#e1146e` sits between 600 and 700. It exists for the **Action** token above and is not part of the regular 50–950 ramp.
 
+**Shuttle Gray 150** `#dcdfe5` sits between 100 and 200. It exists for field borders and dividers in the patient-facing web app (PFA) and is not part of the regular 50–950 ramp.
+
 ---
 
 ## 2. Logo
@@ -190,6 +192,17 @@ Always maintain minimum clear space around the logo.
 | **H2** | 24px | SemiBold (600) | Auto | -0.25px |
 | **H3** | 20px | SemiBold (600) | Auto | -0.25px |
 | **H4** | 18px | SemiBold (600) | Auto | -0.25px |
+
+### Marketing pages
+
+Landing pages and other marketing pages use the same typeface and the same headings. Two titles are larger there, and they grow on wider screens:
+
+| Title | On phones | From 768px |
+|-------|-----------|------------|
+| **Hero title** | 40px | 48px |
+| **Section title** | 24px (H2) | 36px |
+
+Both are SemiBold (600) with a 120% line height. These sizes are for marketing pages only. The patient-facing web app (PFA) keeps every text size the same at every width.
 
 ### Body
 
