@@ -50,7 +50,7 @@ Typographic hierarchy — body, supporting, captions, disabled.
 | Token | HEX | Usage |
 |-------|-----|-------|
 | **Text** | `#162948` | All headings and body copy — never use pure black |
-| **Text Supporting** | `#5c697f` | Descriptions, captions, secondary info |
+| **Text Supporting** | `#454e5f` | Descriptions, captions, secondary info (Shuttle Gray 700) |
 | **Text Disabled** | `#b2bac7` | Disabled UI elements, placeholder text |
 
 ### Neutrals
@@ -59,8 +59,8 @@ Structural grays — borders, dividers, component surfaces.
 
 | Token | HEX | Usage |
 |-------|-----|-------|
-| **Divider** | `#edeef1` | Horizontal rules, section separators |
-| **Border** | `#edeef1` | Table borders, card outlines |
+| **Divider** | `#dcdfe5` | Horizontal rules, section separators (Shuttle Gray 150) |
+| **Border** | `#dcdfe5` | Table borders, card outlines |
 | **White** | `#ffffff` | Primary surface color |
 | **White Smoke** | `#f6f6f9` | Subtle surface differentiation |
 
@@ -86,7 +86,7 @@ System feedback colors — success, error, info, warning. Each has a primary fil
 | **Success** | `#19b07b` | `#d3f8e4` | `#0a7252` (Emerald 700) | Confirmations, completed states |
 | **Error** | `#e84b51` | `#fde7e6` | `#b31d2e` (Scarlet 700) | Validation errors, critical warnings |
 | **Info** | `#419ef0` | `#dceffd` | `#162948` (Text) | Informational callouts, tips |
-| **Warning** | `#f9c74f` | `#fdefc8` | `#b1490c` (Amber Gold 700) | Caution notices, attention required |
+| **Warning** | `#f18f0f` | `#fdefc8` | `#b1490c` (Amber Gold 700) | Caution notices, attention required |
 
 ### Color Primitives (Full Scales)
 
@@ -103,6 +103,8 @@ Complete 50–950 ramps for building extended palettes. The semantic tokens abov
 | **Amber Gold** | `#fffaeb` | `#fdefc8` | `#fbde8c` | `#f9c74f` | `#f7b128` | `#f18f0f` | `#d56b0a` | `#b1490c` | `#903910` | `#762f11` | `#441604` |
 
 **Brand Pink 650** `#e1146e` sits between 600 and 700. It exists for the **Action** token above and is not part of the regular 50–950 ramp.
+
+**Shuttle Gray 150** `#dcdfe5` sits between 100 and 200. It exists for field borders and dividers in the PFA design system and is not part of the regular 50–950 ramp.
 
 ---
 
@@ -182,24 +184,15 @@ Always maintain minimum clear space around the logo.
 **Desktop install:** [Download DM Sans from Google Fonts](https://fonts.google.com/specimen/DM+Sans) — install locally to view Word documents with correct formatting.
 **Word fallback:** If DM Sans is not installed, use Calibri as the fallback font. Never fall back to Times New Roman or other serif typefaces.
 
-### Headings
+### On screens and in documents
 
-| Style | Size | Weight | Line Height | Letter Spacing |
-|-------|------|--------|-------------|----------------|
-| **H1** | 30px | SemiBold (600) | 140% | 0px |
-| **H2** | 24px | SemiBold (600) | Auto | -0.25px |
-| **H3** | 20px | SemiBold (600) | Auto | -0.25px |
-| **H4** | 18px | SemiBold (600) | Auto | -0.25px |
+Every text style (its size, weight and line height, and which style a text takes) is in the type scale of the PFA design system. The web app, landing pages, emails and documents all use that one scale, so this document does not repeat it:
 
-### Body
+https://pillsorted.github.io/Prototypes/PFA-Design-System/#foundations-type
 
-| Style | Size | Weight | Line Height | Letter Spacing | Paragraph Spacing |
-|-------|------|--------|-------------|----------------|-------------------|
-| **Body 16 / Regular** | 16px | Regular (400) | 150% | 0px | 14px |
-| **Body 16 / SemiBold** | 16px | SemiBold (600) | 150% | 0px | 0px |
-| **Body 16 / Medium** | 16px | Medium (500) | 150% | 0px | 0px |
-| **Body 14 / Regular** | 14px | Regular (400) | 150% | 0px | 0px |
-| **Body 14 / Medium** | 14px | Medium (500) | 150% | 0px | 0px |
+In a document, paragraphs of running text sit 14px apart.
+
+The print styles below are the only type styles kept here. They are for printed pages and are never used on a screen.
 
 ### Body (Print)
 
@@ -208,12 +201,6 @@ Always maintain minimum clear space around the logo.
 | **Body 12 / SemiBold** | 12px | SemiBold (600) | 150% | 0% | 0px |
 | **Body 10 / Regular** | 10px | Regular (400) | 150% | 0% | 10px |
 | **Body 10 / SemiBold** | 10px | SemiBold (600) | 150% | 0% | 10px |
-
-### Captions
-
-| Style | Size | Weight | Line Height | Letter Spacing | Case |
-|-------|------|--------|-------------|----------------|------|
-| **All Caps** | 12px | SemiBold (600) | 12px | 1px | UPPERCASE |
 
 ---
 
@@ -232,9 +219,9 @@ Used for formal documents (audits, compliance reports, proposals).
 | **Background** | White (`#ffffff`) |
 | **Logo** | Pink Wordmark lockup, top-left, 28 px height |
 | **Document title** | Text colour (`#162948`), 36 px SemiBold, 120% line-height, vertically centred left |
-| **Subtitle** | Text Supporting (`#5c697f`), Body 16 Regular, 150% line-height, below title, 12 px gap |
-| **Status badge** | All Caps (12 px SemiBold, 1 px letter-spacing), white text on Action (`#e1146e`) background, 8 px padding, 8 px border-radius |
-| **Metadata** | Vertical stack below title block, 24 px gap between items. Labels: 10 px SemiBold, 0.6 px letter-spacing, Text Supporting (`#5c697f`). Values: 12 px Regular, Text colour (`#162948`). 4 px gap between label and value |
+| **Subtitle** | Text Supporting (`#454e5f`), `body17-regular`, below title, 12 px gap |
+| **Status badge** | `caption`, white text on Action (`#e1146e`) background, 8 px padding, 8 px border-radius |
+| **Metadata** | Vertical stack below title block, 24 px gap between items. Labels: 10 px SemiBold, 0.6 px letter-spacing, Text Supporting (`#454e5f`). Values: 12 px Regular, Text colour (`#162948`). 4 px gap between label and value |
 
 ### Body Pages (Letterhead)
 
@@ -247,18 +234,18 @@ Used for formal documents (audits, compliance reports, proposals).
 | **Sub-headings** | Body 12 (print) SemiBold, Text colour (`#162948`) |
 | **Body text** | Body 10 (print) Regular, Text colour (`#162948`), 150% line-height, 10 px paragraph spacing |
 | **Bullet lists** | Disc style, 15 px left margin, 10 px spacing between items (last item: 0), Body 10 (print) Regular, 150% line-height |
-| **Footer** | Date in 9 px Regular, Text Supporting (`#5c697f`), 12 px line-height, 36 px bottom padding |
+| **Footer** | Date in 9 px Regular, Text Supporting (`#454e5f`), 12 px line-height, 36 px bottom padding |
 
 ### Data Tables
 
 | Element | Specification |
 |---------|--------------|
-| **Container** | White background, 1 px `#edeef1` border, 12 px border-radius, overflow hidden |
+| **Container** | White background, 1 px `#dcdfe5` border, 12 px border-radius, overflow hidden |
 | **Header row** | White background |
 | **Header text** | Body 10 (print) SemiBold, Text colour (`#162948`) |
 | **Body text** | Body 10 (print) Regular, Text colour (`#162948`), 150% line-height |
 | **Cell padding** | 10 px horizontal, 8 px vertical |
-| **Cell borders** | 1 px solid Divider (`#edeef1`) on all sides |
+| **Cell borders** | 1 px solid Divider (`#dcdfe5`) on all sides |
 | **Row striping** | Alternate rows: White (`#ffffff`) → White Smoke (`#f6f6f9`) |
 | **Summary/total row** | White Smoke background, same text style as body rows |
 
@@ -269,7 +256,7 @@ Use semantic colours for callout/alert boxes in documents:
 | Type | Background | Border/Accent | Text Colour | When to Use |
 |------|-----------|---------------|-------------|-------------|
 | **Info** | `#dceffd` | `#419ef0` left border | `#162948` | Informational notes, tips |
-| **Warning** | `#fdefc8` | `#f9c74f` left border | `#162948` | Caution notices |
+| **Warning** | `#fdefc8` | `#f18f0f` left border | `#162948` | Caution notices |
 | **Error/Critical** | `#fde7e6` | `#e84b51` left border | `#162948` | Critical warnings, compliance issues |
 | **Success** | `#d3f8e4` | `#19b07b` left border | `#162948` | Confirmations, positive outcomes |
 | **Brand highlight** | `#fef1f8` | `#eb1f79` left border | `#162948` | Key takeaways, executive summary |
@@ -314,12 +301,12 @@ Use semantic colours for callout/alert boxes in documents:
 
   /* Text */
   --text:                #162948;
-  --text-supporting:     #5c697f;
+  --text-supporting:     #454e5f;
   --text-disabled:       #b2bac7;
 
   /* Neutrals */
-  --neutrals-divider:    #edeef1;
-  --neutrals-border:     #edeef1;
+  --neutrals-divider:    #dcdfe5;
+  --neutrals-border:     #dcdfe5;
   --neutrals-white:      #ffffff;
   --neutrals-white-smoke: #f6f6f9;
 
@@ -333,7 +320,7 @@ Use semantic colours for callout/alert boxes in documents:
   --semantic-success:    #19b07b;
   --semantic-error:      #e84b51;
   --semantic-info:       #419ef0;
-  --semantic-warning:    #f9c74f;
+  --semantic-warning:    #f18f0f;
 
   /* Semantic — Secondary Fills (backgrounds) */
   --semantic-success-bg: #d3f8e4;
@@ -358,29 +345,14 @@ Use semantic colours for callout/alert boxes in documents:
 ### Typography Classes
 
 ```css
-/* Headings */
-.h1 { font-family: var(--font-family); font-weight: 600; font-size: 30px; line-height: 1.4; }
-.h2 { font-family: var(--font-family); font-weight: 600; font-size: 24px; letter-spacing: -0.25px; }
-.h3 { font-family: var(--font-family); font-weight: 600; font-size: 20px; letter-spacing: -0.25px; }
-.h4 { font-family: var(--font-family); font-weight: 600; font-size: 18px; letter-spacing: -0.25px; }
-
-/* Body */
-.body-16             { font-family: var(--font-family); font-weight: 400; font-size: 16px; line-height: 1.5; }
-.body-16-semi        { font-family: var(--font-family); font-weight: 600; font-size: 16px; line-height: 1.5; }
-.body-16-medium      { font-family: var(--font-family); font-weight: 500; font-size: 16px; line-height: 1.5; }
-.body-14             { font-family: var(--font-family); font-weight: 400; font-size: 14px; line-height: 1.5; }
-.body-14-medium      { font-family: var(--font-family); font-weight: 500; font-size: 14px; line-height: 1.5; }
+/* Headings and body text come from the PFA design system's type scale (see Typography). */
 
 /* Body (Print) */
 .body-12-semi        { font-family: var(--font-family); font-weight: 600; font-size: 12px; line-height: 1.5; }
 .body-10             { font-family: var(--font-family); font-weight: 400; font-size: 10px; line-height: 1.5; }
 .body-10-semi        { font-family: var(--font-family); font-weight: 600; font-size: 10px; line-height: 1.5; }
 
-/* Captions */
-.caption-caps        { font-family: var(--font-family); font-weight: 600; font-size: 12px; line-height: 12px; letter-spacing: 1px; text-transform: uppercase; }
-
 /* Paragraph spacing — apply to containers, not inline text */
-.body-16 p + p       { margin-top: 14px; }   /* Body 16 Regular paragraph gap */
 .body-10 p + p       { margin-top: 10px; }   /* Body 10 (print) paragraph gap */
 .body-10-semi p + p  { margin-top: 10px; }   /* Body 10 Semi (print) paragraph gap */
 
