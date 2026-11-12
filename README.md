@@ -51,7 +51,8 @@ Typographic hierarchy — body, supporting, captions, disabled.
 |-------|-----|-------|
 | **Text** | `#162948` | All headings and body copy — never use pure black |
 | **Text Supporting** | `#454e5f` | Descriptions, captions, secondary info (Shuttle Gray 700) |
-| **Text Disabled** | `#b2bac7` | Disabled UI elements, placeholder text |
+| **Text Placeholder** | `#5c697f` | Placeholder text, a field's resting label and its unit, in a field the patient can use (Shuttle Gray 600). In a disabled field they are Text Supporting at 64% |
+| **Text Disabled** | `#b2bac7` | Text of an item that can't be picked, such as a day with no slots, and the unfilled part of a date mask. Not a disabled button or field, whose text is Text Supporting at 64% |
 
 ### Neutrals
 
@@ -303,6 +304,7 @@ Use semantic colours for callout/alert boxes in documents:
   /* Text */
   --text:                #162948;
   --text-supporting:     #454e5f;
+  --text-placeholder:    #5c697f;
   --text-disabled:       #b2bac7;
 
   /* Neutrals */
