@@ -76,6 +76,7 @@ Page-level and surface backgrounds. **Web app (PFA):** Gradient Soft Pink on eve
 | **Gradient 200** | `Scarlet 100 (#fde7e6) → Purple 200 (#edddf1)` | Soft tinted background |
 | **Gradient 700** | `Purple 700 → Purple 500` | Hero/feature backgrounds |
 | **Gradient Soft Pink** | `#fff0f2 → #fde8f9`, top to bottom | Page background for every screen of the patient-facing web app (PFA). Its two colours are not on the primitive scales |
+| **Gradient Pink Lilac** | `#f58ab9 → #c7b8ea`, at 196.71° | The circle behind a white featured icon in the patient-facing web app (PFA), and behind an option card's icon in sign-up. Its two colours are not on the primitive scales |
 
 ### Semantic
 
@@ -314,6 +315,7 @@ Use semantic colours for callout/alert boxes in documents:
   --bg-white-smoke:      #f6f6f9;
   --bg-alice-blue:       #f6f6ff;
   --bg-gradient-soft-pink: linear-gradient(180deg, #fff0f2 0%, #fde8f9 100%);
+  --gradient-pink-lilac: linear-gradient(196.71deg, #f58ab9 1.04%, #c7b8ea 94.39%);
   --bg-white:            #ffffff;
 
   /* Semantic — Primary Fills (icons and borders, not text) */
