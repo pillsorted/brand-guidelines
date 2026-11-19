@@ -1,0 +1,9 @@
+{
+  "name": "ps-animated-logo-render",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "lottie-web": "5.13.0",
+    "playwright-core": "1.63.0"
+  }
+}
