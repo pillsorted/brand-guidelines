@@ -13,11 +13,12 @@ symbol breathes once on the close; the tick draws in one grey stroke; the symbol
 shrinks and slides into the lockup; the letters rise in from left to right; then the tagline.
 
 Run: python3 -I assets/logos/Animated/source/build_animated_logo.py assets/logos/Animated/PS-Logo-Wordmark-White-Animated.json
-The .lottie, MP4 and WebM are made from that JSON.
+It writes the JSON and, next to it, the .lottie. Then render the MP4 and WebM from the JSON with render_videos.mjs.
 """
 import json
 import re
 import sys
+import zipfile
 from pathlib import Path
 
 OUT = sys.argv[1]
@@ -337,3 +338,13 @@ doc = {'v': '5.12.2', 'fr': FR, 'ip': 0, 'op': f(END), 'w': W, 'h': H, 'nm': 'Pi
        'assets': [], 'layers': layers, 'markers': []}
 json.dump(doc, open(OUT, 'w'), separators=(',', ':'))
 print(f'wrote {OUT}: {len(layers)} layers, {END}s at {FR} fps')
+
+LOTTIE_ID = 'ps-logo-wordmark-white-animated'
+manifest = {'version': '1', 'generator': f'PillSorted {Path(__file__).name}', 'author': 'Csaba Hodgyai',
+            'animations': [{'id': LOTTIE_ID, 'speed': 1, 'loop': False, 'autoplay': True, 'direction': 1,
+                            'playMode': 'normal'}]}
+dot_lottie = Path(OUT).with_suffix('.lottie')
+with zipfile.ZipFile(dot_lottie, 'w', zipfile.ZIP_DEFLATED) as z:
+    for name, data in (('manifest.json', json.dumps(manifest)), (f'animations/{LOTTIE_ID}.json', Path(OUT).read_text())):
+        z.writestr(zipfile.ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0)), data, zipfile.ZIP_DEFLATED)
+print(f'wrote {dot_lottie}')
