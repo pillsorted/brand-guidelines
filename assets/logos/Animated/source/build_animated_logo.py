@@ -145,12 +145,6 @@ def static(v):
     return {'a': 0, 'k': v}
 
 
-def ks(a=(0, 0), p=(0, 0), s=(100, 100), o=100, r=0):
-    def val(x):
-        return x if isinstance(x, dict) else static(list(x) + [0] if isinstance(x, tuple) and len(x) == 2 else x)
-    return {'a': val(a), 'p': val(p), 's': val(s if isinstance(s, dict) else tuple(s)), 'o': val(o) if isinstance(o, dict) else static(o), 'r': static(r)}
-
-
 def ks3(a, p, s, o=100):
     """Transform with 3-value vectors (what After Effects exports)."""
     def v3(x):
