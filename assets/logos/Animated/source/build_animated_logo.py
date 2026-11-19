@@ -275,7 +275,6 @@ symbol = layer('Symbol', 3, ks3(
             (T_BREATH, [s0, s0, 100], ease(0.37, 0, 0.63, 1)),             # a slow, soft swell
             (T_MOVE, [s0 * 1.02, s0 * 1.02, 100], MOVE),                   # no stop: the peak flows into the shrink
             (T_MOVE_END, [s1, s1, 100], LINEAR)])))
-layers[-1]['ty'] = 3
 
 # Wordmark null: places the brand lockup's letters in the comp.
 lockup = layer('Lockup', 3, ks3(a=[0, 0], p=[OFF[0], OFF[1]], s=[K * 100, K * 100]))
