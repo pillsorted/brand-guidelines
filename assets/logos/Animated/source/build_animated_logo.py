@@ -296,16 +296,15 @@ def letter_layers(name, subs_list, t0, stagger, dur, rise, slide):
             o=anim([(t, 0, ease(0.33, 0, 0.2, 1)), (t + dur * 0.6, 100, LINEAR)])), parent=lockup, shapes=shapes)
 
 
-# Top of the stack first: tagline, wordmark, tick (grey over white), heart.
+# Top of the stack first: tagline, wordmark, tick, heart.
 letter_layers('Tagline', tagline, T_TAG, TAG_STAGGER, TAG_DUR, rise=2.5, slide=0)
 letter_layers('Letter', word, T_WORD, WORD_STAGGER, WORD_DUR, rise=6, slide=3)
 
-for name, colour, delay in (('Tick', GREY, 0),):
-    t = T_TICK + delay
-    trim = {'ty': 'tm', 's': static(0), 'e': anim([(t, 0, ease(0.3, 0, 0.1, 1)), (t + 0.42, 100, LINEAR)]),
-            'o': static(0), 'm': 1, 'nm': 'Trim'}
-    layer(name, 4, ks3(a=[0, 0], p=[0, 0], s=[100, 100]), parent=symbol,
-          shapes=[group(name, [{'ty': 'sh', 'ks': static(tick), 'nm': 'Path'}, trim, stroke(colour, stroke_w)])])
+t = T_TICK
+trim = {'ty': 'tm', 's': static(0), 'e': anim([(t, 0, ease(0.3, 0, 0.1, 1)), (t + 0.42, 100, LINEAR)]),
+        'o': static(0), 'm': 1, 'nm': 'Trim'}
+layer('Tick', 4, ks3(a=[0, 0], p=[0, 0], s=[100, 100]), parent=symbol,
+      shapes=[group('Tick', [{'ty': 'sh', 'ks': static(tick), 'nm': 'Path'}, trim, stroke(GREY, stroke_w)])])
 
 # Heart: the designed draw values (start 50 -> 47.3 -> 0, end 50 -> 43.5 -> 100 along the path).
 DOT = 0.35   # % of the path: a round dot at touch-down
