@@ -120,7 +120,7 @@ Complete 50–950 ramps for building extended palettes. The semantic tokens abov
 | **Wordmark** | Heart symbol + "PillSorted" + "PERSONAL PHARMACY" tagline | **PREFERRED** — default for most uses | 36 px |
 | **Symbol** | Heart icon only | Favicons, app icons, very small spaces | 16 px |
 | **Proportional** | Compact horizontal layout | Navigation bars, tight horizontal layouts | 20 px |
-| **Byline** | "from" above the Wordmark lockup, in one solid Shuttle Gray 400 | The foot of AskPillSorted's launch and welcome screens: a quiet sign-off, not the brand's main logo, so the Wordmark inside it is smaller than its own minimum | 50 px (the Wordmark in it 28 px) |
+| **Byline** | "from" above the Wordmark lockup, in one solid Shuttle Gray 400 | The foot of AskPillSorted's launch and welcome screens: a quiet sign-off, not the brand's main logo, so the Wordmark inside it is smaller than its own minimum | 49.6 px (the Wordmark in it 28 px) |
 
 ### Colour Modes
 
@@ -129,7 +129,7 @@ Complete 50–950 ramps for building extended palettes. The semantic tokens abov
 | **Default (Pink)** | All (Clean, Wordmark, Symbol, Proportional) | White, PS Accent/Background colours, PS Neutrals, clear uncluttered photographs |
 | **Invert (White)** | All (Clean, Wordmark, Symbol, Proportional) | PS Primary or Secondary colours, clear uncluttered photographs |
 | **Secondary (Shuttle Gray 600)** | Wordmark, Proportional only | White and White Smoke — document footers, subdued contexts |
-| **Byline (Shuttle Gray 400)** | Byline only | AskPillSorted's launch and welcome screens |
+| **Byline (Shuttle Gray 400)** | Byline only | Gradient Soft Pink — the foot of AskPillSorted's launch and welcome screens |
 
 ### Logo Assets
 
