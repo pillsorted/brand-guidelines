@@ -120,6 +120,7 @@ Complete 50–950 ramps for building extended palettes. The semantic tokens abov
 | **Wordmark** | Heart symbol + "PillSorted" + "PERSONAL PHARMACY" tagline | **PREFERRED** — default for most uses | 36 px |
 | **Symbol** | Heart icon only | Favicons, app icons, very small spaces | 16 px |
 | **Proportional** | Compact horizontal layout | Navigation bars, tight horizontal layouts | 20 px |
+| **Byline** | "from" above the Wordmark lockup, in one solid Shuttle Gray 400 | The foot of AskPillSorted's launch and welcome screens: a quiet sign-off, not the brand's main logo, so the Wordmark inside it is smaller than its own minimum | 49.6 px (the Wordmark in it 28 px) |
 
 ### Colour Modes
 
@@ -128,6 +129,7 @@ Complete 50–950 ramps for building extended palettes. The semantic tokens abov
 | **Default (Pink)** | All (Clean, Wordmark, Symbol, Proportional) | White, PS Accent/Background colours, PS Neutrals, clear uncluttered photographs |
 | **Invert (White)** | All (Clean, Wordmark, Symbol, Proportional) | PS Primary or Secondary colours, clear uncluttered photographs |
 | **Secondary (Shuttle Gray 600)** | Wordmark, Proportional only | White and White Smoke — document footers, subdued contexts |
+| **Byline (Shuttle Gray 400)** | Byline only | Gradient Soft Pink — the foot of AskPillSorted's launch and welcome screens |
 
 ### Logo Assets
 
@@ -144,6 +146,9 @@ Logo exports are stored in the `assets/logos/` folder within this repository.
 - `PS-Logo-Wordmark-White` — Wordmark lockup
 - `PS-Logo-Proportional-White` — Proportional lockup
 - `PS-Logo-Symbol-White` — Symbol only
+
+**Byline:**
+- `PS-Logo-Byline-Gray` — "from" above the Wordmark lockup, Shuttle Gray 400 (`#8895A8`), 133 × 49.6. One image: the "from" is outlined DM Sans Medium, never set as text, and the Wordmark is the brand file recoloured
 
 **Animated:**
 - `PS-Logo-Wordmark-White-Animated` — Wordmark lockup in Invert (White), animated (Lottie, dotLottie, MP4, WebM); see [Animated Logo](#animated-logo)
